@@ -14,4 +14,5 @@ SELECT
 FROM
     Scores
 ORDER BY
+
     score DESC
