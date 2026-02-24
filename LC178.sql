@@ -16,3 +16,4 @@ FROM
 ORDER BY
 
     score DESC
+
