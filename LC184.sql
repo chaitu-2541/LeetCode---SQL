@@ -21,4 +21,5 @@ WHERE
     e.salary = (
         SELECT MAX(salary) FROM Employee
         WHERE departmentId = e.departmentId
+
     );
