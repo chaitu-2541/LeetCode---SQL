@@ -17,4 +17,5 @@ GROUP BY player_id
 SELECT ROUND(COUNT(DISTINCT a.player_id) * 1.0 / (SELECT COUNT(DISTINCT player_id) FROM Activity), 2) as fraction
 FROM Activity a
 INNER JOIN cte ON a.player_id = cte.player_id
+
 WHERE a.event_date = DATEADD(DAY, 1, cte.first_login_date)
