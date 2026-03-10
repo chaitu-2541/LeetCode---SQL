@@ -18,3 +18,4 @@ WHERE
     AND l1.num = l2.num
 
     AND l2.num = l3.num
+
